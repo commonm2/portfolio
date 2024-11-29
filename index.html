@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type@0.3.4"></script>
+    <script src="js/js.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="menu">
+          <li data-menuanchor="sec1" class="active">
+            <a href="#sec1">HOME</a>
+          </li>
+          <li data-menuanchor="sec2">
+            <a href="#sec2">PROJECTS</a>
+          </li>
+          <li data-menuanchor="sec3">
+            <a href="#sec3">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="fullpage">
+      <section class="section sec1 active mainVisual">
+        <div class="cursor">
+          <i class="fa-solid fa-arrows-up-down fa-bounce"></i>
+        </div>
+        <h1>
+          <span>WEB</span><br />
+          <span>PUBLISHER</span><br />
+          <span>PORTFOLIO</span>
+        </h1>
+        <img src="img/astro.png" alt="" class="astro" />
+      </section>
+      <section class="section sec2 projects">
+        <div class="modal">
+          <figure>
+            <div class="blackcover"></div>
+            <img src="" alt="" class="img1" />
+            <a href="#" class="modalClose"
+              ><img src="img/icons/close.png" alt=""
+            /></a>
+          </figure>
+          <div class="desc">
+            <div class="text">
+              <div class="text1">
+                <h2></h2>
+                <p class="p1"></p>
+              </div>
+              <div class="text2">
+                <p class="p2"></p>
+              </div>
+            </div>
+            <div class="btns">
+              <ul>
+                <li><a class="web" href="" target="_blank">WEB SITE</a></li>
+                <li><a class="github" href="" target="_blank">GIT HUB</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cursor">
+          <i class="fa-solid fa-arrows-left-right fa-bounce"></i>
+        </div>
+        <h1 class="title">PROJECTS</h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects_wrap">
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(1).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>한화 이글스</h2>
+                    <p>#RENEWAL #STICKY</p>
+                    <p class="p1">HTML / CSS</p>
+                    <p class="p2">
+                      Java Script를 공부하기 전, HTML과 CSS만을 사용하여 만든
+                      웹페이지입니다. Sticky 포지션을 사용하여 SNS와 고객문의
+                      아이콘이 화면에 고정되게 하여 이용에 편의성을 높였고, 기존
+                      홈페이지에 없던 유튜브 섹션을 넣어서 홈페이지 내에서도
+                      재생이 가능하도록 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projecthwe/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projecthwe"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(2).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>요아정</h2>
+                    <p>#반응형 #SLIDE #MODAL</p>
+                    <p class="p1">HTML / CSS / Java Script / J-Query</p>
+                    <p class="p2">
+                      기존 홈페이지를 분석한 후, 불편함을 개선하여 제작한
+                      웹페이지입니다. 메인 이미지에 Slide 효과를 줘서 좀 더
+                      다양한 이미지가 보여지게 만들었고, 네비게이션바에
+                      서브메뉴를 추가한 후 Slide Up / Down 효과를 주었고 메뉴의
+                      이미지를 클릭하면 모달창으로 큰 사이즈의 이미지가 띄워지게
+                      제작하였습니다. 또한, 화면 사이즈의 변화에 따라 콘텐츠들의
+                      크기도 변하는 반응형으로 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projectyaj/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projectyaj"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(3).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>TIRETECH</h2>
+                    <p>#반응형 #SUB PAGE</p>
+                    <p class="p1">HTML / CSS / Java Script / J-Query</p>
+                    <p class="p2">
+                      연습용으로 제작한 클론페이지이며, 네비게이션바 서브메뉴
+                      Slide Up/Down 기능과 SNS 섹션 파트에서 "MORE"버튼을 누를
+                      시 콘텐츠가 추가로 더 보이는 기능을 넣었습니다. 반응형
+                      페이지로써 화면이 특정 크기 이하로 줄어들면 네비게이션바가
+                      아이콘으로 바뀌도록 제작되었습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projecttt/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projecttt"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(4).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>STARSHIP</h2>
+                    <p>#반응형 #TAB MENU #SLIDE</p>
+                    <p class="p1">HTML / CSS / Java Script / J-Query</p>
+                    <p class="p2">
+                      연습용으로 제작한 클론페이지이며, 기존 페이지와 다른
+                      부분은 메인 슬라이드 부분에 PLAY/STOP 버튼을 넣어
+                      슬라이드를 재생/일시정지 할 수 있는 기능을 넣었습니다. Tab
+                      Menu를 활용하여 적은 공간에 다양한 내용을 담을 수 있도록
+                      하였습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projectsse/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projectsse"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+            </div>
+            <div class="swiper-slide projects_wrap">
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(5).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>SUBWAY</h2>
+                    <p>#SLIDE #SUB PAGE</p>
+                    <p class="p1">HTML / CSS / Java Script</p>
+                    <p class="p2">
+                      SLIDE 기능을 공부한 후 처음 적용해본 페이지이며,
+                      메인페이지와 서브페이지 곳곳에 애니메이션 효과를
+                      적용했습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projectsw/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projectsw"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(6).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>HOTEL<br />LAGO DI<br />GARDA</h2>
+                    <p>#반응형</p>
+                    <p class="p1">HTML / CSS</p>
+                    <p class="p2">
+                      Float 특성과 각 Article의 너비값을 화면 크기에 따라 다르게
+                      부여하여 CSS만을 이용해서 만든 반응형 웹 페이지입니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projecthl/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projecthl"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(7).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>Adobe</h2>
+                    <p>#GRID #VIDEO</p>
+                    <p class="p1">HTML / CSS</p>
+                    <p class="p2">
+                      연습용으로 제작한 클론페이지이며, 영상이 들어간 부분은
+                      Video 태그를 활용하였고, 메인 콘텐츠에는 Grid를
+                      사용하였습니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projectadb/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projectadb"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(8).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>PORTFOLIO</h2>
+                    <p>#반응형 #ANIMATION #FULL PAGE</p>
+                    <p class="p1">HTML / CSS / Java Script</p>
+                    <p class="p2"></p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/portfolio/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/portfolio"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+            </div>
+            <div class="swiper-slide projects_wrap">
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(9).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>Netflix</h2>
+                    <p>#반응형 #BOOTSTRAP</p>
+                    <p class="p1">HTML / CSS / BOOTSTRAP</p>
+                    <p class="p2">
+                      Bootstrap을 사용하여 만든 Netflix 클론페이지입니다.
+                    </p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li>
+                        <a
+                          class="web"
+                          href="https://bladjo.github.io/projectnf/"
+                          >WEB SITE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/bladjo/projectnf"
+                          >GIT HUB</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(1).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>요아정</h2>
+                    <p class="p1">HTML / CSS / Java Script</p>
+                    <p class="p2"></p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li><a class="web" href="">WEB SITE</a></li>
+                      <li><a class="github" href="">GIT HUB</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(1).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>요아정</h2>
+                    <p class="p1">HTML / CSS / Java Script</p>
+                    <p class="p2"></p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li><a class="web" href="">WEB SITE</a></li>
+                      <li><a class="github" href="">GIT HUB</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+              <div class="project">
+                <figure>
+                  <div class="blackcover"></div>
+                  <img src="img/projects/project(1).jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <div class="text">
+                    <h2>요아정</h2>
+                    <p class="p1">HTML / CSS / Java Script</p>
+                    <p class="p2"></p>
+                  </div>
+                  <div class="btns">
+                    <ul>
+                      <li><a class="web" href="">WEB SITE</a></li>
+                      <li><a class="github" href="">GIT HUB</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="more">자세히 보려면 클릭해주세요.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section procon sec3">
+        <div class="cursor">
+          <i class="fa-solid fa-arrows-up-down fa-bounce"></i>
+        </div>
+        <h1 class="title">PROFILE</h1>
+        <div class="procon_wrap">
+          <img src="img/ufo.png" alt="" class="ufo" />
+          <ul class="profile">
+            <li class="name">
+              <img src="img/icons/user-line.png" alt="" />
+              <p>조호진</p>
+            </li>
+            <li class="birth">
+              <img src="img/icons/calendar-2-line.png" alt="" />
+              <p>1990. 05. 01</p>
+            </li>
+            <li class="skill">
+              <img src="img/icons/computer-line.png" alt="" />
+              <div class="skill_icon">
+                <img src="img/icons/skill_icon_html.png" alt="" />
+                <img src="img/icons/skill_icon_css.png" alt="" />
+                <img src="img/icons/skill_icon_js.png" alt="" />
+                <img src="img/icons/skill_icon_jq.png" alt="" />
+                <img src="img/icons/skill_icon_ps.png" alt="" />
+                <img src="img/icons/skill_icon_ai.png" alt="" />
+              </div>
+            </li>
+            <li class="phone">
+              <img src="img/icons/smartphone-line.png" alt="" />
+              <p>010-9243-5310</p>
+            </li>
+            <li class="mail">
+              <img src="img/icons/mail-line.png" alt="" />
+              <p>commonm2@naver.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <p>이 사이트는 포트폴리오를 위한 비상업적 목적으로 제작되었습니다.</p>
+        </div>
+      </section>
+    </div>
+    <!-- video -->
+    <video
+      class="mainbg"
+      src="vid/bg.mp4"
+      loop
+      muted="true"
+      playsinline
+      autoplay
+    ></video>
+  </body>
+</html>
