@@ -255,12 +255,12 @@ img.astro {
 .project {
   position: relative;
   margin: 20px;
-  transform: translateX(-100px);
   opacity: 0;
-  transition: 0.5s ease-in;
+  transition: 0.6s ease-in;
   cursor: pointer;
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
+  transform: translateX(-30%);
 }
 .project figure {
   overflow: hidden;
@@ -316,7 +316,7 @@ img.astro {
 }
 
 .more {
-  font-size: 0.8vw;
+  font-size: calc(0.4vw + 10px);
   position: absolute;
   color: #fff;
   font-family: "Noto Sans KR", sans-serif;
@@ -324,6 +324,7 @@ img.astro {
   left: 50%;
   transform: translateX(-50%);
   animation: breath 5s infinite;
+  text-align: center;
 }
 @keyframes breath {
   0% {
@@ -468,18 +469,45 @@ img.astro {
   position: relative;
 }
 
-.procon_wrap {
+.sec3.active .procon_wrap {
   color: #fff;
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: 700;
-  padding: 50px;
+  font-family: "Pretendard-Regular", sans-serif;
+  display: flex;
+  text-align: center;
+  gap: 10vw;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  text-shadow: 3px 4px 5px black;
+  animation: procon 9s ease-in;
 }
+@keyframes procon {
+  0% {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  90% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.procon_wrap h2 {
+  font-size: calc(2vw + 24px);
+  font-family: "Paperlogy-8ExtraBold", sans-serif;
+  margin-bottom: 30px;
+}
+
 .procon_wrap img {
   width: calc(1vw + 24px);
 }
 .procon_wrap p {
-  font-size: calc(0.5vw + 12px);
+  font-size: calc(0.7vw + 12px);
   margin-left: 20px;
+  font-family: "Paperlogy-8ExtraBold", sans-serif;
 }
 .skill_icon {
   margin-left: 20px;
@@ -492,9 +520,9 @@ img.astro {
   display: flex;
   align-items: center;
 }
-img.ufo {
-  width: 12vw;
-  /* animation: ufo 2s ease forwards; */
+.profile li,
+.contact li {
+  margin-top: 3vw;
 }
 .footer p {
   position: absolute;
@@ -503,6 +531,31 @@ img.ufo {
   font-family: "Noto Sans KR", sans-serif;
   bottom: 20px;
   width: 100%;
+}
+.sec3.active img.spaceship {
+  width: 70vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spaceship 10s ease-out forwards;
+  transition: all 4s cubic-bezier(1, -0.005, 1, 0.01);
+}
+@keyframes spaceship {
+  0% {
+    transform: scale(0.001) rotate(45deg);
+    left: -50%;
+    top: -50%;
+  }
+  80% {
+    left: 50%;
+    top: 50%;
+    transform: scale(1) rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+    left: 200%;
+  }
 }
 
 /* 반응형 */
@@ -537,6 +590,12 @@ img.ufo {
     height: 50px;
   }
 }
+@media (max-width: 799px) {
+  .project {
+    width: 40%;
+    height: 40%;
+  }
+}
 @media (max-width: 699px) {
   nav ul li {
     text-align: center;
@@ -557,7 +616,6 @@ img.ufo {
     text-align: center;
   }
   .project {
-    margin: 10px;
   }
   .skill_icon {
     display: flex;
@@ -577,10 +635,6 @@ img.ufo {
   }
   nav ul {
     gap: 30px;
-  }
-  .project {
-    height: 30%;
-    margin: auto;
   }
   .projects_wrap {
     height: 90vh;
@@ -603,5 +657,11 @@ img.ufo {
   .modalClose img {
     width: 30px;
     height: 30px;
+  }
+}
+@media (max-width: 499px) {
+  .project {
+    width: 35%;
+    height: 35%;
   }
 }
